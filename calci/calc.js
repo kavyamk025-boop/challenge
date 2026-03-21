@@ -1,0 +1,52 @@
+const input=document.querySelector("#input input");
+document.getElementById("one").onclick=function(){
+    input.value+="1"
+}
+document.getElementById("two").onclick=function(){
+    input.value+="2"
+}
+document.getElementById("three").onclick=function(){
+    input.value+="3"
+}
+document.getElementById("four").onclick=function(){
+    input.value+="4"
+}
+document.getElementById("five").onclick=function(){
+    input.value+="5"
+}
+document.getElementById("six").onclick=function(){
+    input.value+="6"
+}
+document.getElementById("seven").onclick=function(){
+    input.value+="7"
+}
+document.getElementById("eight").onclick=function(){
+    input.value+="8"
+}
+document.getElementById("nine").onclick=function(){
+    input.value+="9"
+}
+document.getElementById("zero").onclick=function(){
+    input.value+="0"
+}
+document.getElementById("plus").onclick=function(){
+    input.value+="+"
+}
+document.getElementById("minus").onclick=function(){
+    input.value+="-"
+}
+document.getElementById("mul").onclick=function(){
+    input.value+="*"
+}
+document.getElementById("div").onclick=function(){
+    input.value+="/"
+}
+document.getElementById("clr").onclick=function(){
+    input.value=" "
+}
+document.getElementById("del").onclick=function(){
+    input.value=input.value.slice(0,-1)
+}
+document.getElementById("result").onclick=function(){
+    input.value=eval(input.value)
+}

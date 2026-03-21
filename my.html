@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">increase the count</button>
+    <p id="count">0</p>
+    <button id="minus">decrease the count</button>
+    <p id="count1">0</p>
+
+    <script>let btn=document.getElementById("btn")
+    let decrease=document.getElementById("minus")
+let count=document.getElementById("count")
+let c=0
+btn.addEventListener("click",function(){
+    c++;
+    count.textContent=c
+
+})
+let c1=0
+minus.addEventListener("click",function(){
+    c1--
+    count1.textContent=c1
+})
+
+</script>
+</body>
+</html>
