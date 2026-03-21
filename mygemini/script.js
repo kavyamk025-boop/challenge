@@ -5,7 +5,7 @@ const chat = document.getElementById("chat");
 
 /* Add your Gemini API key here */
 
-const API_KEY = "AIzaSyA5-r8aE9bjIP04C7SlQaqQSMkGqM9zKMw";
+const API_KEY = "";
 
 
 send.addEventListener("click", sendMessage);
