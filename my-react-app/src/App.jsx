@@ -1,8 +1,18 @@
+import { useState, useEffect } from "react";
+
 function App() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = "Count: " + count;
+  }, [count]); // ✅ runs only when count changes
+
   return (
     <div>
-      <h1>Hello React</h1>
-      <p>This is my first React app</p>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
     </div>
   );
 }
