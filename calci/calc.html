@@ -3,44 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="calc.css">
+    <title>Document</title>
+<style>
+    #main{
+        margin: 250px;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    button{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(72, 72, 198);
+    }
+    .row{
+        height: 100%;
+        width: 100%;
+        
+    }
+    #inp{
+        margin-bottom: 15px;
+        border: 3px solid black;
+        background-color: rgb(102, 102, 183);
+        width: 507px;
+        height: 100px;
+    }
+
+</style>
+    
 </head>
-
 <body>
-    
-    <div class="main">
-        <div id="input"><input type="text" placeholder="Enter number"></div>
-        <div class="row1">
-   <button id="del">del</button>
-   <button id="clr">clr</button>
-    <button id="one">1</button>
-    <button id="plus">+</button>
-   
+    <div id="main">
+        <div id="inpu"><input type="text" name="" id="inp"></div>
+        <div style="display: flex;flex-direction: column;">
+            <div class="row">
+            <button class="button">0</button>
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
         </div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">-</button>
+        </div>
+        <div class="row">
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">x</button>
+            <button class="button">=</button>
+            <button class="button">clear</button>
+        </div>
+        </div>
+        
 
-<div class="row2">
-           <button id="two">2</button>
-           <button id="three">3</button>
-           <button id="four">4</button>
-           <button id="minus">-</button>
-        </div>
-<div class="row3">
-    <button id="five">5</button>
-    <button id="six">6</button>
-    <button id="seven">7</button>
-    <button id="mul">*</button>
-        </div>
-
-<div class="row4">
-<button id="eight">8</button>
-<button id="nine">9</button>
-<button id="zero">0</button>
-<button id="div">/</button>
-        </div>
-<button id="result">=</button>
     </div>
-    <script src="calc.js"></script><div class="calc">
-    
+    <script src="calc.js"></script>
 </body>
 </html>
