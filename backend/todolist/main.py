@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 app=FastAPI()
-@app.get("/post")
-def home (name:str):
- return { "hi":f"{name}"}
+class Number(BaseModel):
+    num:int
+@app.post("/check")
+def check(data:Number):
+    return {"msg":data.num}
