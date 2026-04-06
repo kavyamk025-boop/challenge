@@ -1,5 +1,6 @@
 // // import { useState } from "react"
 
+// import { use } from "react";
 import { useState } from "react";
 
 // // const { useState } = require("react");
@@ -41,14 +42,57 @@ import { useState } from "react";
   
 // }
 // export default App;
-import { useState } from "react";
-function App(){
-    const[Count,setCount]=useState(0)  
-  return(
-  <>
-      <h1>{Count}</h1>
-        <button onClick={()=>setCount(Count+1)}>increase</button>
-        </>
-    );
+// import { useState } from "react";
+// function App(){
+//     const[Count,setCount]=useState(0)  
+//   return(
+//   <>
+//       <h1>{Count}</h1>
+//         <button onClick={()=>setCount(Count+1)}>increase</button>
+//         </>
+//     );
+// }
+// export default App;
+
+// import { useState } from "react";
+// function App(){
+//     const [Inp,setInp]=useState("")
+//     return(
+//         <>
+//         <input type="text" name="" id="" value={Inp} onChange={(e)=>setInp(e.target.value)} />
+// <h1>{Inp}</h1>
+//         </>
+//     )
+// };
+// // export default App;
+// import { useState } from "react";
+
+function App() {
+  const [Inp, setInp] = useState("");
+  const [Submit,setSubmit]=useState("")
+const[Em,setEm]=useState("")
+const Handle=()=>{
+        setSubmit(Inp);
+    }
+
+  return (
+    <>
+
+    
+      <input
+        type="text"
+        value={Inp}
+        placeholder="Enter Your Sweet Name"
+        onChange={(e) => setInp(e.target.value)}
+      />
+
+<input type="text" name="" id="" value={Em} onChange={(e)=>setEm(e.target.value)} />
+
+<button onClick={Handle}>submit</button>
+      <h1>{Submit}</h1>
+      <h2>{Em}</h2>
+    </>
+  );
 }
+
 export default App;
