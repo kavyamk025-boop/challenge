@@ -1,0 +1,54 @@
+.main{
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 200px;
+     background-color: rgb(119, 119, 219);
+    border: 2px solid blue;
+    height: 50px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+#inp{
+    background-color: aquamarine;
+    border-radius: 30px;
+    border: 1px solid blueviolet;
+    padding: 20px;
+    width: 250px;
+}
+#submit{
+    color:white;
+    background-color: green;
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 50px;
+    
+    width: 100px;
+}
+#newh1{
+    color: brown;
+    border-radius: 20px;
+
+}
+#btnn{
+    background-color: red;
+    color:white;
+    height: 30px;
+    border-radius:30% ;
+    margin-left: 50%;
+}
+#div{
+    margin-top: 10px;
+    
+    margin-left: 30%;
+    margin-right: 200px;
+     background-color: rgb(234, 152, 234);
+    border: rgb(200, 177, 223);
+    height: 20px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    
+
+}
